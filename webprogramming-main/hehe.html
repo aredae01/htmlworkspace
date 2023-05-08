@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post" name="form1">
+        이름을 입력하세요: <input type="text" required placeholder="홍길이"><br>
+        자기소개 하세요: <input type="text" required placeholder="자기소개 입력란 일겁니다."><br>
+        <br>제일 좋아하는 색을 선택해보세요
+        <input type="color" name="color"/>
+        <br>키를 입력하세요(10cm단위입니다. )
+        <input type="number" min="140" max="200" step="10" value="150" name="height"><br>
+        <input type="range" min="1" max="10" value="5"><br>
+        <input type="reset" value="초기화" name="reset">
+        <input type="submit" value="제출" name="submit"><br>
+        비밀번호를 잃었을떄 질문 리스트<br>
+        <select name="password" id="password_1">
+            <option value="1">나의 고향은</option>
+            <option value="1">내가 키우던 강아지 이름</option>
+            <option value="1">내가 좋아하는 색</option>
+            <option value="1">내가 다닌 중학교 이름은</option>
+        </select>
+    </form>
+    <p>데이러리스트를 연십하기 위한 질문</p><br>
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+        <option value="크롬"></option>
+        <option value="오페라"></option>
+        <option value="엣지"></option>
+        <option value="사파리"></option>
+        <option value="파이어폭스"></option>
+    </datalist>
+</body>
+</html>
